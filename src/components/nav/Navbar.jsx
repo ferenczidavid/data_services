@@ -1,41 +1,47 @@
 import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 import { Twirl as Hamburger } from 'hamburger-react'
+import Button from '../common/Button'
+
+/* List of links */
+const links = [
+    {
+        id:1,
+        link: 'home'
+    },
+    {
+        id:2,
+        link: 'about'
+    },
+    {
+        id:3,
+        link: 'support'
+    },
+    {
+        id:4,
+        link: 'platforms'
+    },
+    {
+        id:5,
+        link: 'pricing'
+    }
+]
 
 const Navbar = () => {
     /* useStates */
     const [isOpen, setIsOpen] = useState(false);
 
-    /* List of links */
-    const links = [
-        {
-            id:1,
-            link: 'home'
-        },
-        {
-            id:2,
-            link: 'about'
-        },
-        {
-            id:3,
-            link: 'support'
-        },
-        {
-            id:4,
-            link: 'platforms'
-        },
-        {
-            id:5,
-            link: 'pricing'
-        }
-    ]
+    const ActionButtons = () => <>
+        <Button type="secondary" onClick={() => {console.log("fasz vagy")}}>Log In</Button>
+        <Button >Register</Button>
+    </>
 
   return (
     /* Navbar */
-    <div className='fixed w-screen h-[5rem] flex justify-between items-center px-4 bg-zinc-200 shadow-lg'>
+    <div className='fixed top-0 z-10 w-full h-[5rem] flex justify-between items-center px-4 bg-zinc-200 shadow-lg'>
         {/* logo */}
         <div className='font-bold'>
-            <a href="home" >C<span className='text-[#5D3FD3]'>M.</span></a>
+            <a href="home">C<span className='text-[#5D3FD3]'>M.</span></a>
         </div>
 
         {/* links */}
@@ -70,9 +76,8 @@ const Navbar = () => {
         </div>
         
         {/* Buttons */}
-        <div className='hidden md:flex'>
-            <button className='rounded p-1 border-2 border-[#5D3FD3] m-1 hover:scale-110 transition duration-300 active:scale-90'>Log In</button>
-            <button className='rounded p-1 border-2 border-[#5D3FD3] m-1 bg-[#5D3FD3] text-white hover:scale-110 transition duration-300 active:scale-90'>Register</button>
+        <div className='hidden md:flex gap-2'>
+            <ActionButtons />
         </div>
 
         {/* Hamburger menu open */}
@@ -94,8 +99,7 @@ const Navbar = () => {
                     ))
                 }
                 <div>
-                    <button className='rounded p-1 border-2 border-[#5D3FD3] m-1 hover:scale-110 transition duration-300 active:scale-90'>Log In</button>
-                    <button className='rounded p-1 border-2 border-[#5D3FD3] m-1 bg-[#5D3FD3] text-white hover:scale-110 transition duration-300 active:scale-90'>Register</button> 
+                    <ActionButtons />
                 </div>    
             </ul>
         )}

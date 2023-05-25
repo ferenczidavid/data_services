@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import './App.css'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
+import Layout from './components/ui/Layout'
+import Home from './features/Home'
+
 
 function App() {
   return (
-    <>
-      <Navbar/>
+    <Layout>
       <Home/>
-    </>
+    </Layout>
   )
 }
 
