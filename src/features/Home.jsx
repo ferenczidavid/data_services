@@ -55,7 +55,7 @@ const Home = () => {
         <div className='mx-6 -translate bottom-5 flex flex-col py-8 bg-zinc-200 border border-slate-400 rounded-xl text-center shadow-xl items-center col-span-2'>
           <p className='underline cursor-default'>Services</p>
           <ul className='w-full whitespace-nowrap flex justify-center md:justify-between pt-2 flex-wrap gap-2'>
-            {services.map((item, i) => (<li key={`service_item_${i}`} className='basis-[100px] justify-center gap-2 inline-flex md:inline-block cursor-default'>{item.icon}{item.label}</li>))}
+            {services.map((item, i) => (<li key={`service_item_${i}`} className='basis-[100px] justify-center gap-2 inline-flex  cursor-default'>{item.icon}{item.label}</li>))}
           </ul>
         </div>
       </div>

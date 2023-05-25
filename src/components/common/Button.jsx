@@ -1,15 +1,5 @@
 import clsx from "clsx"
 
-/*
-
-type ButtonType = "primary" | "secondary"
-
-interface ButtonProps extends HTMLButtonProps {
-  type?: ButtonType
-}
-
-*/
-
 const Button = ({className, type = "primary", children, ...rest} /* : ButtonProps */) => {
   return (
     <button className={clsx("rounded px-3 py-1 hover:scale-110 transition duration-300 active:scale-90", {
