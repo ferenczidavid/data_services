@@ -31,7 +31,7 @@ const services = [
 const Home = () => {
 
   return (
-    <div name='home' className='w-full h-full bg-zinc-200 flex flex-col justify-between'>
+    <div name='home' className='w-full h-full pt-[5rem] bg-zinc-200 flex flex-col justify-between'>
 
       {/* Grid view container */}
       <div className='grid md:grid-cols-2 max-w-[1240px] m-auto'>
