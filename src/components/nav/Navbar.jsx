@@ -32,7 +32,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const ActionButtons = () => <>
-        <Button type="secondary" onClick={() => {console.log("fasz vagy")}}>Log In</Button>
+        <Button type="secondary">Log In</Button>
         <Button >Register</Button>
     </>
 
