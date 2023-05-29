@@ -19,7 +19,7 @@ const links = [
     },
     {
         id:4,
-        link: 'platforms'
+        link: 'services'
     },
     {
         id:5,

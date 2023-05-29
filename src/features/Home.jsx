@@ -34,7 +34,7 @@ const Home = () => {
     <div name='home' className='w-full h-full pt-[5rem] bg-zinc-200 flex flex-col justify-between'>
 
       {/* Grid view container */}
-      <div className='grid md:grid-cols-2 max-w-[1240px] m-auto'>
+      <div className='grid md:grid-cols-2 max-w-[1240px] m-auto md:gap-y-64'>
 
         {/* Col 1-1 */}
         <div className='flex flex-col justify-center md:items-start w-full px-4 py-8'>
