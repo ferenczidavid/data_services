@@ -1,30 +1,28 @@
 import React from 'react'
 import homeImage from '../assets/home_image.jpg'
-import { CiDatabase, CiMobile4 } from 'react-icons/ci'
-import { SiVirtualbox } from 'react-icons/si'
-import { GiComputerFan } from 'react-icons/gi'
-import { BiBrain } from 'react-icons/bi'
+import { BsApple } from 'react-icons/bs'
+import { FaWindows, FaLinux, FaMobile, FaAndroid } from 'react-icons/fa'
 
 const services = [
   {
-    icon: <GiComputerFan className='h-6 fill-[#5D3FD3]'/>,
-    label: "Compute"
+    icon: <FaWindows className='h-6 w-6 fill-[#5D3FD3]'/>,
+    label: "Microsoft Windows"
   }  ,
   {
-    icon: <CiMobile4 className='h-6 fill-[#5D3FD3]'/>, 
-    label: "Web & Mobile Apps"
+    icon: <FaLinux className='h-6 w-6 fill-[#5D3FD3]'/>, 
+    label: "Linux"
   }  ,
   {
-    icon: <SiVirtualbox className='h-6 fill-[#5D3FD3]'/>,
-    label: "Virtual Machine"
+    icon: <BsApple className='h-6 w-6 fill-[#5D3FD3]'/>,
+    label: "macOS"
   }  ,
   {
-    icon: <CiDatabase className='h-6 fill-[#5D3FD3]'/>,
-    label: "SQL Database"
+    icon: <FaAndroid className='h-6 w-6 fill-[#5D3FD3]'/>,
+    label: "Android"
   }  ,
   {
-    icon: <BiBrain className='h-6 fill-[#5D3FD3]'/>,
-    label: "Machine Learning"
+    icon: <FaMobile className='h-6 w-6 fill-[#5D3FD3]'/>,
+    label: "iOS"
   }  ,
 ]
 
@@ -53,7 +51,7 @@ const Home = () => {
 
         {/* Col bottom Services container */}
         <div className='mx-6 -translate bottom-2 flex flex-col py-8 bg-zinc-200 border border-slate-400 rounded-xl text-center shadow-xl items-center md:col-span-2'>
-          <p className='underline cursor-default'>Services</p>
+          <p className='underline cursor-default'>Platforms</p>
           <ul className='w-full whitespace-nowrap flex justify-center md:justify-between pt-2 flex-wrap gap-2'>
             {services.map((item, i) => (<li key={`service_item_${i}`} className='basis-[100px] justify-center gap-2 inline-flex  cursor-default'>{item.icon}{item.label}</li>))}
           </ul>
