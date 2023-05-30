@@ -68,7 +68,7 @@ const Footer = () => {
   return (
     <div className='h-[7rem] w-full bg-zinc-300 flex justify-center items-center'>
       {/* Container */}
-      <div className=''>
+      <div>
         {
                 footerLinks.map(({id,text,ref,target}) => (
                     <a 
