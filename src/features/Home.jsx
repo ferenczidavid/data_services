@@ -48,7 +48,6 @@ const Home = () => {
 
         <img src={homeImage} alt="home_image" className='scale-75'/>
 
-
         {/* Col bottom Services container */}
         <div className='w-full -translate bottom-2 flex flex-col py-8 bg-zinc-200 border border-slate-400 rounded-xl text-center shadow-xl items-center md:col-span-2'>
           <p className='underline cursor-default'>Platforms</p>

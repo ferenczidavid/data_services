@@ -4,7 +4,7 @@ import Card from '../components/common/Card'
 
 const About = () => {
   return (
-    <div name='about' className='w-full h-full snap-center'>
+    <div name='about' className='w-full h-full'>
         {/* Container */}
         <div className='w-full max-w-[1240px] mx-auto'>
             {/* Text box */}

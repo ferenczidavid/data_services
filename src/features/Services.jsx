@@ -72,7 +72,7 @@ const Services = () => {
                     services.map(({id,time,icon,service,desc}) => (
                         <div 
                             key={id}
-                            className='w-40 h-64 md:h-60 lg:h-80 flex flex-col border border-slate-400 rounded-md shadow-xl bg-zinc-100 p-4'
+                            className='w-40 h-fit-content md:h-60 lg:h-80 flex flex-col border border-slate-400 rounded-md shadow-xl bg-zinc-100 p-4'
                         >
                             <p className='pb-3'>{time}</p>
                             <icon>{icon}</icon>

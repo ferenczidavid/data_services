@@ -66,7 +66,7 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <div className='h-[7rem] w-full bg-zinc-300 flex justify-center items-center flex-wrap p-5'>
+    <div className='md:h-[7rem] w-full bg-zinc-300 flex justify-center items-center flex-wrap p-5'>
       {/* Container */}
       <div>
         {

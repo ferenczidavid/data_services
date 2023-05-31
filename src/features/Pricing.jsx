@@ -30,8 +30,8 @@ const Pricing = () => {
             <div className='flex'>
                 {pricingCards.map(({id,text}) => (
                     <PricingCard key={id}>
-                        <h1 className='font-bold text-4xl text-[#5D3FD3]'>{id}</h1>
-                        <p>{text}</p>
+                        <h1 className='font-bold text-2xl md:text-4xl text-[#5D3FD3]'>{id}</h1>
+                        <p className='text-sm md:text-base'>{text}</p>
                     </PricingCard>
                 ))}
             </div>
