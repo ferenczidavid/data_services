@@ -29,10 +29,10 @@ const services = [
 const Home = () => {
 
   return (
-    <div name='home' className='w-full h-full pt-[5rem] bg-zinc-200 flex flex-col justify-between'>
+    <div name='home' className='w-full h-full flex flex-col justify-between snap-center'>
 
       {/* Grid view container */}
-      <div className='grid md:grid-cols-2 max-w-[1240px] m-auto md:gap-y-64'>
+      <div className='w-full grid md:grid-cols-2 max-w-[1240px] m-auto md:gap-y-64 px-6'>
 
         {/* Col 1-1 */}
         <div className='flex flex-col justify-center md:items-start w-full px-4 py-8'>
@@ -45,12 +45,12 @@ const Home = () => {
         </div>
 
         {/* Col 2-1 */}
-        <div>
-          <img src={homeImage} alt="home_image" className='scale-75'/>
-        </div>
+
+        <img src={homeImage} alt="home_image" className='scale-75'/>
+
 
         {/* Col bottom Services container */}
-        <div className='mx-6 -translate bottom-2 flex flex-col py-8 bg-zinc-200 border border-slate-400 rounded-xl text-center shadow-xl items-center md:col-span-2'>
+        <div className='w-full -translate bottom-2 flex flex-col py-8 bg-zinc-200 border border-slate-400 rounded-xl text-center shadow-xl items-center md:col-span-2'>
           <p className='underline cursor-default'>Platforms</p>
           <ul className='w-full whitespace-nowrap flex justify-center md:justify-between pt-2 flex-wrap gap-2'>
             {services.map((item, i) => (<li key={`service_item_${i}`} className='basis-[100px] justify-center gap-2 inline-flex  cursor-default'>{item.icon}{item.label}</li>))}

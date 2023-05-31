@@ -1,4 +1,4 @@
-import './App.css'
+
 import Layout from './components/ui/Layout'
 import Home from './features/Home'
 import About from './features/About'

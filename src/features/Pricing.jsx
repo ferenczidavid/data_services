@@ -19,7 +19,7 @@ const pricingCards = [
 
 const Pricing = () => {
   return (
-    <div name='pricing' className='w-full h-full pt-[10rem] bg-zinc-200'>
+    <div name='pricing' className='w-full h-full'>
         {/* Container */}
         <div className='max-w-[1240px] mx-auto grid grid-cols-1 gap-y-28'>
             {/* Text */}

@@ -55,17 +55,19 @@ const services = [
 
 const Services = () => {
   return (
-    <div name='services' className='w-full h-full md:pt-[10rem] bg-zinc-200'>
+    <div name='services' className='w-full h-fit'>
         {/* Container */}
-        <div className='max-w-[1540px] mx-4 grid grid-cols-2'>
+        <div className='max-w-[1540px] h-full mx-4 grid grid-cols-2'>
             {/* Text */}
             <div>
                 <h1 className='font-bold text-2xl'>After your credit, keep getting free services</h1>
                 <p className='py-4'>Move to pay as you go for free monthly amounts of popular services for 12 months and 55+ other services always.</p>
                 <Button type='secondary'>See all free services</Button>
             </div>
+            
             {/* Grid */}
-            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4'>
+            {/* <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4'> */}
+            <div className='w-full h-full flex flex-wrap gap-4 justify-center'>
                 {
                     services.map(({id,time,icon,service,desc}) => (
                         <div 
