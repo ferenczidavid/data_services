@@ -29,7 +29,7 @@ const services = [
 const Home = () => {
 
   return (
-    <div name='home' className='w-full h-full flex flex-col justify-between snap-center'>
+    <div name='home' className='w-full h-screen flex flex-col justify-between'>
 
       {/* Grid view container */}
       <div className='w-full grid md:grid-cols-2 max-w-[1240px] m-auto md:gap-y-64 px-6'>

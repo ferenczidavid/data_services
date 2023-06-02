@@ -93,6 +93,8 @@ const Navbar = () => {
                                 to={link}
                                 smooth
                                 duration={500}
+                                containerId='content'
+                                offset={-100}
                                 onClick={() => setIsOpen(!isOpen)}
                             >
                                 {link}

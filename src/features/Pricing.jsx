@@ -9,7 +9,7 @@ const pricingCards = [
     },
     {
         id:2,
-        text: 'After your credit, move to pay as you go to keep getting popular services and 55+ other services. Only pay if you use more than the free monthly amounts.'
+        text: 'After your credit, move to pay as you go to keep getting popular services. Only pay if you use more than the free monthly amounts.'
     },
     {
         id:3,

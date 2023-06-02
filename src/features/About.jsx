@@ -20,7 +20,7 @@ const About = () => {
                 </Card>
                 {/* Card 2 */}
                 <Card>
-                    <p><span className='text-[#5D3FD3] font-bold'>55+</span> other services free</p>
+                    <p><span className='text-[#5D3FD3] font-bold'>12</span> services free</p>
                 </Card>
                 {/* Card 3 */}
                 <Card>
